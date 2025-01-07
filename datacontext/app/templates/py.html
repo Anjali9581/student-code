@@ -1,0 +1,30 @@
+{% include 'base.html' %}
+{% block content %}
+{% endblock content %}
+<center>
+  <h1 style="color: brown;">Python Student Details</h1>
+    <table border="2">
+       <tr>
+         <th>name</th>
+         <th>age</th>
+         <th>gender</th>
+         <th>qualification</th>
+         <th>skills</th>
+         <th>mock_rating</th>
+         <th>course</th>
+       </tr>
+       {% for i in student %}
+        {% if i.course in 'pyspiders' %}
+       <tr>
+           <td>{{i.name}}</td>
+           <td>{{i.age}}</td>
+           <td>{{i.gender}}</td>
+           <td>{{i.qualification}}</td>
+           <td>{{i.skills}}</td>
+           <td>{{i.mock_rating}}</td>
+           <td>{{i.course}}</td>
+       </tr>
+       {% endif %}
+       {% endfor %}
+    </table>
+    </center>

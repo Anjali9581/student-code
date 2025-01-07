@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <center>
+    <form action="" method="POST"> 
+        {% csrf_token %}
+        <label for="">NAME</label><input type="text" name="name" id="" value="{{student2.name}}"> <br><br>
+        <label for="">QUALIFICATION</label><input type="text" name="qualification" id="" value="{{student2.qualification}}"> <br><br>
+        <label for="">AGE</label><input type="number" name="age" id="" value="{{student2.age}}"> <br><br>
+        <label for="">GENDER</label><input type="text" name="gender" id="" value="{{student2.gender}}"> <br><br>
+        <label for="">COURSE</label><input type="text" name="course" id="" value="{{student2.course}}"> <br><br>
+        <label for="">SKILLS</label><input type="text" name="skills" id="" value="{{student2.skills}}"> <br><br>
+        <label for="">MOCK_RATING</label><input type="number" name="mock_rating" id="" value="{{student2.mock_rating}}"> <br><br>
+        <!-- <button type="submit">UPDATE</button> -->
+        {% if update == True %}
+        <button type="submit">UPDATE</button>
+        {% else %}
+        <button type="submit">SUBMIT</button>
+       {% endif %}
+    </form>
+   </center>
+</body>
+</html>

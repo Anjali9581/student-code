@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <style>
+        p{
+            color: green;
+        }
+    </style> -->
+</head>
+<body>
+    {% include 'base.html' %}
+    {% block content %}
+    {% endblock content %}
+    
+    <!-- <h1>gd mrng</h1>
+    <p>{{data}}</p>
+     {{student}}
+     {% for student in student %}
+     <h1>{{student.name}}</h1>
+     <h2><i>{{student.qualification}}</i></h2>
+     {{students.gendor}}
+     <h3>{{student.age}}</h3>
+     {{student.yop}}
+     <h4>{{student.course}}</h4>
+     <i><h4>{{student.skills}}</h4></i>
+     <p>{{student.dob}}</p>
+     <p>{{student.mock_rating}}</p>
+     <i>{{student.address}}</i>
+     <p>--------------------------------------------------------------------</p>
+     {% endfor %} 
+      -->
+      <style>
+       
+
+        h1 {
+            text-align: center;
+            color: #0056b3;
+        }
+
+        table {
+            width: 90%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #0056b3;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        td {
+            font-size: 14px;
+        }
+    </style>
+
+    <h1>Details of All Spiders student</h1>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Qualification</th>
+            <th>Gender</th>
+            <th>Age</th>
+            <!-- <th>Year of Passing</th> -->
+            <th>Course</th>
+            <th>Skills</th>
+            <th>Mock Rating</th>
+            <!-- <th>Date of Birth</th>
+            <th>Address</th> -->
+        </tr>
+        
+        {% for i in student %}
+        <tr>
+            <td><a href="{% url 'display' i.id %}">{{ i.name }}</a></td>
+            <td>{{ i.qualification }}</td>
+            <td>{{ i.gender }}</td>
+            <td>{{ i.age }}</td>
+            <!-- <td>{{ i.yop }}</td> -->
+            <td>{{ i.course }}</td>
+            <td>{{ i.skills }}</td>
+            <td>{{ i.mock_rating }}</td>
+            <!-- <td>{{ i.dob }}</td>
+            <td>{{ i.address }}</td> -->
+        </tr>
+        {% endfor %}
+    </table>
+    
+      
+</body>
+</html>

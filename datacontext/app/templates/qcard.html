@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #d1{
+            display: grid;
+            grid-template-columns: 400px 400px 400px;
+            grid-template-rows: 400px 400px 400px;
+    
+            
+              /* flex-wrap: wrap;  */
+             justify-content: space-around;
+              box-shadow: 5px rgb(202, 198, 198);  
+        }
+        h1 img{ 
+            /* border: 2px solid; */
+            height: 3em;
+            background-repeat: no-repeat;
+           
+            /* width: 200px; */
+        }
+        </style>
+</head>
+<body>
+    {% include 'base.html' %}
+    {% block content %}
+    {% endblock content %}
+    <center> <h1><img src="https://qspiders.com/_nuxt/img/qspiders_logo.6096665.png" alt=""></h1>
+        <p>Punjagutta. Telangana. 1st floor, Road, 1, Banjara Hills Main Rd, Punjagutta, Hyderabad, Telangana 500082. </p>
+    </center>
+        <div id="d1">
+            {% for i in student %}
+             {% if i.course in 'prospiders' %} 
+                 <div style="height: 280px; width: 300px; border-radius: 15px;  border: 1px solid; text-align: center; box-shadow: inset 0 0  10px  rgb(77, 68, 68);">
+                       <br>
+                       <img src="https://qspiders.com/_nuxt/img/qspiders_logo.6096665.png" alt=""> <br>
+                    name :  {{i.name}} <br>
+                    qualification :{{i.qualification}} <br>
+                    genger :   {{i.gender}} <br>
+                    age : {{i.age}} <br>
+                    <!-- yop:    {{i.yop}} <br> -->
+                    course :{{i.course}} <br>
+                    skills :{{i.skills}} <br>
+                    <!-- dob : {{i.dob}} <br> -->
+                    rating :{{i.mock_rating}} <br>
+                    <!-- address :{{i.address}} <br> -->
+                </div>
+                {% endif %}
+              {% endfor %}
+        </div>
+</body>
+</html>

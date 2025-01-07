@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+             font-family: Arial, sans-serif;
+             background-color: azure;
+
+        }
+    
+    div{
+        width: 20vw;
+        height: 40vh;
+        background-color: white;
+        box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+        border-radius: 20px;
+    }
+    </style>
+    <center>
+        <br><br>
+        <h1>STUDENT DETAILS</h1>
+        <div>
+            <br><br>
+        Name : {{student1.name}} <br>
+    Qualification : {{student1.qualification}}<br>
+   Gender : {{student1.gender}}<br>
+    Age : {{student1.age}}<br>
+   Course : {{student1.course}}<br>
+    Skills : {{student1.skills}}<br>
+   Mock_Rating : {{student1.mock_rating}}<br> <br>
+     <a href="{% url 'edit' student1.id %}"><button>EDIT</button></a>
+        </div>
+    </center>
+</body>
+</html>

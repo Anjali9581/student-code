@@ -1,0 +1,22 @@
+
+{% include 'base.html' %}
+{% block content %}
+{% endblock content %}
+<div style="display: flex; flex-wrap: wrap; justify-content: space-around; box-shadow: 10px 10px 10px gray; ">
+    {% for i in student %}
+         <div style="height: 320px; width: 400px; border-radius: 15px;  border: 2px gray solid; text-align: center;   box-shadow: 10px 10px 10px  rgb(148, 145, 145);">
+          <h1>     name :  {{i.name}}</h2>
+        <h2><i> qualification :{{i.qualification}}</i></h2>
+             genger :   {{i.gender}}
+                <h3>  age : {{i.age}}</h3>
+                 
+        <h4> course :{{i.course}}</h4>
+         <i><h4>skills :{{i.skills}}</h4></i>
+       
+       <p> rating :{{i.mock_rating}}</p>
+       <br>
+       
+      </div>
+      <br><br>
+    {% endfor %}
+    </div>

@@ -1,0 +1,46 @@
+<!-- <div>
+    <a href="{% url 'home' %}"><button>home</button></a>
+    <a href="py"><button>py</button></a>
+    <a href="j"><button>j</button></a>
+    <a href="pro"><button>pro</button></a>
+    <a href="q"><button>q</button></a>
+    <a href="cards"><button>cards</button></a>
+    <a href="jcards"><button>jcards</button></a>
+    <a href="pycards"><button>pycards</button></a>
+    <a href="procards"><button>procards</button></a>
+    <a href="qcards"><button>qcards</button></a>
+  </div> -->
+  <nav> 
+    <ol>
+        <li> <a href="{% url 'home' %}">Home</a></li>
+        <li><a href="{% url 'py' %}">Python</a></li>
+        <li><a href="{% url 'j' %}">Java</a></li>
+        <li><a href="{% url 'pro' %}">Pro</a></li>
+        <li><a href="{% url 'q' %}">Testing</a></li>
+        <li><a href="{% url 'cards' %}">Cards</a></li>
+        <li><a href="{% url 'jcards' %}">Jcards</a></li>
+        <li><a href="{% url 'pycards' %}">Pycards</a></li>
+        <li><a href="{% url 'procards' %}">Procards</a></li>
+        <li><a href="{% url 'qcards' %}">Qcards</a></li>
+    </ol>
+ </nav>
+ <style>
+    
+     
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+     
+    ol{
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+    }
+    a{
+        text-decoration: none;
+    }
+    
+ </style>
