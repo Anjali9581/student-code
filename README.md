@@ -1,6 +1,7 @@
 # student-code
 ![Screenshot_7-1-2025_193246_127 0 0 1](https://github.com/user-attachments/assets/d3b4327d-004f-451e-8f60-66f3b3c8af91)
-![Screenshot_7-1-2025_193944_127 0 0 1](https://github.com/user-attachments/assets/935294c7-887c-479d-bafd-061b6129e753)
+
+![Screenshot_7-1-2025_193916_127 0 0 1](https://github.com/user-attachments/assets/a9f9d1c7-9bbe-4830-aa63-7004e9dbdd24)
 
 ![Screenshot_7-1-2025_193944_127 0 0 1](https://github.com/user-attachments/assets/b6271211-57f9-4e6e-bad3-6ca3a03c5aa9)
 ![Screenshot_7-1-2025_193336_127 0 0 1](https://github.com/user-attachments/assets/1dbcb5bb-0ab8-420b-a474-8796c3ab4b83)
